@@ -1,7 +1,4 @@
 // Vercel serverless function: /api/claude
-// The API key lives in the ANTHROPIC_API_KEY environment variable (set in Vercel),
-// never in the client bundle.
-
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
@@ -24,7 +21,7 @@ export default async function handler(req, res) {
         "anthropic-version": "2023-06-01",
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-3-5-sonnet-20241022",
         max_tokens: 2000,
         system: system || undefined,
         messages: [{ role: "user", content: prompt }],
