@@ -1,7 +1,7 @@
 # Atelier de Prompt — App mobile (PWA)
 
 Application installable sur Android, qui génère un prompt optimisé via l'API de Claude.
-Interface en français ou en hébreu (RTL), avec traduction anglaise du prompt final.
+Interface en français ou en hébreu (RTL), avec traduction anglaise du prompt  final.
 
 La clé API reste **côté serveur** (fonction Vercel `/api/claude`), jamais dans le navigateur.
 
